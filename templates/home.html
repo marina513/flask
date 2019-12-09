@@ -1,0 +1,28 @@
+
+
+
+  
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+     <!-- class="media content-section" da elmorb3een el abed ele fslenn 2 blogs-->
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
+
+
+<!-- shelt kol 7aga mogoda fe layout -->
+
+	<!--flask best5dm jinja da ele be5lene a3dl fe template br7te-->
+    <!-- 444{,%4%} de m3naha ene haktb hna code  -->
+	<!-- //{,{,},} de m3naha ene h3ml print  -->
+	<!-- posts de bta5do mn def Home fe .py ele bdoro bea5od mn posts ele foho -->
